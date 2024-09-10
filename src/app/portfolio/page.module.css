@@ -1,0 +1,48 @@
+.container {
+}
+.mainTitle {
+	font-size: 100px;
+	background: linear-gradient(to bottom, #ed7ed5, #e0d9df);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.selectTitle {
+	margin: 20px 0px;
+}
+.items {
+	display: flex;
+	gap: 50px;
+}
+
+.portfolioItems {
+	border: 3px solid rgb(205, 184, 203);
+	border-radius: 5px;
+	height: 300px;
+	width: 300px;
+	position: relative;
+	background-size: cover !important;
+}
+
+.title {
+	position: absolute;
+	font-size: 30px;
+	font-weight: bold;
+	right: 10px;
+	bottom: 10px;
+}
+.portfolioItems:hover .title {
+	color: rgb(125, 42, 100);
+}
+
+.portfolioItems:nth-child(1) {
+	background: url('/illustration.png');
+}
+
+.portfolioItems:nth-child(2) {
+	background: url('/websites.jpg');
+}
+
+.portfolioItems:nth-child(3) {
+	background: url('/apps.jpg');
+}

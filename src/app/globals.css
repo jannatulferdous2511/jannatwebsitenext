@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html,
+body {
+	max-width: 100vw;
+	overflow-x: hidden;
+}
+
+:root {
+	--bg: black;
+	--text: rgb(205, 184, 203);
+}
+
+* body {
+	color: var(--text);
+	background-color: var(--bg);
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.theme {
+	transition: 1s all ease;
+}
+
+.dark {
+	background-color: black;
+	color: rgb(205, 184, 203);
+}
+
+.light {
+	color: black;
+	background-color: rgb(205, 184, 203);
+}
+
+.container {
+	max-width: 1366px;
+	min-height: 100vh;
+	margin: 0 auto;
+	padding: 50 50px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+@media (max-width: 1536px) {
+	.container {
+		width: 1366px;
+	}
+}
+
+@media (max-width: 1366px) {
+	.container {
+		width: 1280px;
+	}
+}
+
+@media (max-width: 1280px) {
+	.container {
+		width: 1024px;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+@media (max-width: 1024px) {
+	.container {
+		width: 768px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		width: 640px;
+	}
+}
+
+@media (max-width: 640px) {
+	.container {
+		width: 475px;
+	}
+}
+
+@media (max-width: 475px) {
+	.container {
+		width: 380px;
+	}
+}

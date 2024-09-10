@@ -1,0 +1,11 @@
+.button {
+	width: max-content;
+	font-weight: 15px;
+	/* background-color: rgb(239, 191, 234); */
+	background-color: rgb(205, 184, 203);
+	color: black;
+	padding: 20px;
+	border: none;
+	cursor: pointer;
+	border-radius: 5px;
+}
