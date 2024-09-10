@@ -29,6 +29,8 @@ const PostCard = (props: Props) => {
 					everywhere.Its my pleasure to travel with my dog everywhere.
 				</p>
 
+				<span>we love uor pets</span>
+
 				<Link className={styles.link} href="/blog/post">
 					Read More
 				</Link>
