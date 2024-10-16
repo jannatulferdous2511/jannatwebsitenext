@@ -1,5 +1,9 @@
 .container {
 }
+
+.itemsHover {
+	margin-bottom: 50px;
+}
 .mainTitle {
 	font-size: 100px;
 	background: linear-gradient(to bottom, #ed7ed5, #e0d9df);
@@ -18,8 +22,18 @@
 .portfolioItems {
 	border: 3px solid rgb(205, 184, 203);
 	border-radius: 5px;
-	height: 300px;
-	width: 300px;
+	height: 450px;
+	width: 450px;
+	position: relative;
+	background-size: cover !important;
+	/* translate-x: 20px;
+	margin-top: 40px; */
+}
+.portfolioItems {
+	border: 3px solid rgb(205, 184, 203);
+	border-radius: 5px;
+	height: 450px;
+	width: 450px;
 	position: relative;
 	background-size: cover !important;
 }
@@ -36,13 +50,85 @@
 }
 
 .portfolioItems:nth-child(1) {
-	background: url('/illustration.png');
+	background: url('/mayabi1.jpg');
+	/* translate-x: 50px; */
+	margin-top: 50px;
 }
 
 .portfolioItems:nth-child(2) {
-	background: url('/websites.jpg');
+	background: url('/amra3.jpg');
 }
 
 .portfolioItems:nth-child(3) {
-	background: url('/apps.jpg');
+	background: url('/mahim1.jpg');
+	/* translate-x: 50px; */
+	margin-top: 50px;
 }
+/* itemsHoverBottom */
+
+.itemsHoverBottom {
+	margin-bottom: 100px;
+}
+.bottomPortfolioItems {
+	border: 3px solid rgb(205, 184, 203);
+	border-radius: 5px;
+	height: 450px;
+	width: 450px;
+	position: relative;
+	background-size: cover !important;
+	/* translate-x: 20px; */
+	margin-top: 100px;
+}
+
+.bottomItems {
+	display: flex;
+	gap: 50px;
+}
+
+.bottomPortfolioItems:nth-child(1) {
+	background: url('/mayabiabbu3.jpg');
+	/* translate-x: 50px; */
+	margin-top: 50px;
+}
+
+.bottomPortfolioItems:nth-child(2) {
+	background: url('/mayabiami2.png');
+}
+
+.bottomPortfolioItems:nth-child(3) {
+	background: url('/mahimabbu6.jpg');
+	/* translate-x: 50px; */
+	margin-top: 50px;
+}
+
+.endPortfolioItems {
+	border: 3px solid rgb(205, 184, 203);
+	border-radius: 5px;
+	height: 450px;
+	width: 450px;
+	position: relative;
+	background-size: cover !important;
+	/* translate-x: 20px; */
+	margin-top: 100px;
+}
+.endItems {
+	display: flex;
+	gap: 50px;
+}
+
+.endPortfolioItems:nth-child(1) {
+	background: url('/abbumayabimahim.jpg');
+}
+.endPortfolioItems:nth-child(2) {
+	background: url('/mahimami3.jpg');
+}
+.endPortfolioItems:nth-child(3) {
+	background: url('/amimayabimahim3.jpg');
+}
+/* @media screen and (max-width: 1280px) {
+	.post {
+		width: 45%;
+	}
+} */
+/* @media screen and (max-width: 768px) {
+} */

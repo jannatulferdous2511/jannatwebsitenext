@@ -4,7 +4,7 @@ import styles from './page.module.css';
 
 type Props = {};
 
-const BlogPost = (props: Props) => {
+const BlogPost = () => {
 	return (
 		<div className={styles.container}>
 			<div className={styles.top}>

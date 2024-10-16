@@ -6,17 +6,17 @@ import React, { useState } from 'react';
 import styles from './page.module.css';
 type Props = {};
 
-const blog = (props: Props) => {
+const Blog = () => {
 	return (
 		<div className={styles.mainContainer}>
 			<div className={styles.container}>
 				<Link href="/blog/testId" className={styles.container}>
 					<div className={styles.imageContainer}>
 						<Image
-							src="https://images.pexels.com/photos/2896297/pexels-photo-2896297.jpeg?auto=compress&cs=tinysrgb&w=600"
+							src="/bluefamily.jpg"
 							alt=""
 							height={350}
-							width={400}
+							width={500}
 							className={styles.img}
 						/>
 						{/* <Button url="/portfolio" text="See Our Work" /> */}
@@ -36,10 +36,10 @@ const blog = (props: Props) => {
 				<Link href="/blog/testId" className={styles.container}>
 					<div className={styles.imageContainer}>
 						<Image
-							src="https://images.pexels.com/photos/1452717/pexels-photo-1452717.jpeg?auto=compress&cs=tinysrgb&w=600"
+							src="/sonyamra2.JPG"
 							alt=""
-							height={250}
-							width={400}
+							height={350}
+							width={500}
 							className={styles.img}
 						/>
 					</div>
@@ -58,10 +58,10 @@ const blog = (props: Props) => {
 				<Link href="/blog/testId" className={styles.container}>
 					<div className={styles.imageContainer}>
 						<Image
-							src="https://images.pexels.com/photos/573256/pexels-photo-573256.jpeg?auto=compress&cs=tinysrgb&w=600"
+							src="/family2.jpg"
 							alt=""
-							height={250}
-							width={400}
+							height={350}
+							width={500}
 							className={styles.img}
 						/>
 					</div>
@@ -94,4 +94,10 @@ const blog = (props: Props) => {
 	);
 };
 
-export default blog;
+export default Blog;
+
+// https://images.pexels.com/photos/2896297/pexels-photo-2896297.jpeg?auto=compress&cs=tinysrgb&w=600
+
+// https://images.pexels.com/photos/1452717/pexels-photo-1452717.jpeg?auto=compress&cs=tinysrgb&w=600
+
+// https://images.pexels.com/photos/573256/pexels-photo-573256.jpeg?auto=compress&cs=tinysrgb&w=600

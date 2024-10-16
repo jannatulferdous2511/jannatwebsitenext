@@ -36,8 +36,13 @@ const links = [
 	},
 	{
 		id: 6,
-		title: 'Dashboard',
-		path: '/dashboard',
+		title: 'Sibling',
+		path: '/sibling',
+	},
+	{
+		id: '7',
+		title: 'Sign',
+		path: '/sign',
 	},
 ];
 

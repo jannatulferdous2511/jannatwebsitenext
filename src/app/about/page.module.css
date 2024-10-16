@@ -54,9 +54,30 @@
 		flex-direction: column;
 		text-align: center;
 	}
+	.img {
+		object-fit: cover;
+	}
 
 	/* .boxes {
 		flex-direction: column;
 		gap: 50px;
 	} */
+}
+.familyContainer {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.familyTitle {
+	margin: 50px 0px;
+	background: linear-gradient(to bottom, #ed7ed5, #e0d9df);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+
+	text-align: center;
+}
+
+.carousel {
+	width: 90%;
+	margin-top: 20px;
+	padding-top: 10px;
 }

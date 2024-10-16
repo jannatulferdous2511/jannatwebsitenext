@@ -75,10 +75,6 @@
 	object-fit: contain;
 }
 
-/* .avatar2 {
-	object-fit: contain;
-} */
-
 .textContainer {
 	flex: 2;
 	display: flex;
@@ -127,4 +123,13 @@
 .avatarDesc {
 	display: flex;
 	flex-direction: column;
+}
+
+@media screen and (max-width: 768px) {
+	.imgContainer {
+		display: none;
+	}
+	.textContainer {
+		align-items: center;
+	}
 }

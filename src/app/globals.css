@@ -40,10 +40,11 @@ a {
 }
 
 .container {
-	max-width: 1366px;
+	width: 1536px;
 	min-height: 100vh;
-	margin: 0 auto;
-	padding: 50 50px;
+	margin: auto;
+	padding-left: 50px;
+	padding-right: 50px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -91,4 +92,17 @@ a {
 	.container {
 		width: 380px;
 	}
+}
+.clip_path {
+	clip-path: polygon(50% 0%, 100% 0, 100% 78%, 49% 100%, 0 79%, 0 0);
+	height: 88vh;
+	width: 100%;
+	background: rgb(233, 233, 240);
+	/* background-color: rgb(196, 185, 196); */
+	/* padding: 150px 200px; */
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+	justify-content: center;
 }

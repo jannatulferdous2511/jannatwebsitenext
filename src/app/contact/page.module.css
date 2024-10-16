@@ -22,10 +22,7 @@
 
 .subContainer {
 	display: flex;
-	/* align-items: center;  */
-
-	/* justify-content: space-between; */
-	gap: 100px;
+	gap: 150px;
 }
 
 .imgContainer {
@@ -82,16 +79,12 @@
 		align-items: center;
 		text-align: center;
 		justify-content: center;
-		gap: 10px;
-		margin: 0px;
+		gap: 20px;
+		margin: auto 0;
 	}
-
-	.formContainer {
+	.subContainer {
 		display: flex;
-
 		flex-direction: column;
-		justify-content: center;
-		text-align: center;
-		align-items: center;
+		gap: 50px;
 	}
 }

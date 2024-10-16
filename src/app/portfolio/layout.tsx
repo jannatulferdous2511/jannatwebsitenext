@@ -1,10 +1,10 @@
-import React, { Children } from 'react';
+import React, { Children, useEffect } from 'react';
 import styles from './page.module.css';
 
 const Layout = ({ children }: any) => {
 	return (
 		<div>
-			<h1 className={styles.mainTitle}>Our Works</h1>
+			<h1 className={styles.mainTitle}>Our Memories</h1>
 			{children}
 		</div>
 	);
