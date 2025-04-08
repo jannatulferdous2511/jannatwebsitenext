@@ -1,4 +1,54 @@
 .container {
+	margin-top: 180px;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 0px;
+}
+.info {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	gap: 14px;
+}
+
+.logo {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.logoText {
+	font-size: 24px;
+
+	background: linear-gradient(to bottom, #ed7ed5, #e0d9df);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+.logoDesc {
+	font-weight: 300;
+	color: rgb(207, 178, 204);
+}
+.icons {
+	margin-top: 20px;
+	display: flex;
+	gap: 10px;
+}
+.links {
+	flex: 2;
+	display: flex;
+	justify-content: center;
+	gap: 100px;
+}
+.list {
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	font-weight: 300;
+}
+.listTitle {
+	font-weight: bold;
+}
+
+/* .container {
 	height: 100px;
 	display: flex;
 	justify-content: space-between;
@@ -7,9 +57,13 @@
 }
 
 .logo {
-	font-size: 20px;
+	
+	font-size: 25px;
 	font-weight: bold;
-	color: rgb(221, 81, 202);
+
+	background: linear-gradient(to bottom, #ed7ed5, #e0d9df);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
 .links {
 	display: flex;
@@ -32,5 +86,20 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: space-around;
+	}
+} */
+@media screen and (max-width: 768px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 10px;
+	}
+	.links {
+		display: flex;
+		flex-direction: column;
+		margin-top: 20px;
+		align-items: center;
+		gap: 30px;
 	}
 }

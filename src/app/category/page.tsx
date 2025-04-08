@@ -10,7 +10,7 @@ const Category = () => {
 
 			<div className={styles.categories}>
 				<Link
-					href="/blog?cat=style"
+					href="/ourFamily"
 					className={`${styles.category} ${styles.youtube}`}
 				>
 					<Image
@@ -23,7 +23,7 @@ const Category = () => {
 					Family
 				</Link>
 				<Link
-					href="/about?cat=style"
+					href="/aboutus"
 					className={`${styles.category} ${styles.facebook}`}
 				>
 					<Image
@@ -36,7 +36,7 @@ const Category = () => {
 					PetFamily
 				</Link>
 				<Link
-					href="/portfolio?cat=style"
+					href="/portfolio"
 					className={`${styles.category} ${styles.instagram}`}
 				>
 					<Image
@@ -49,7 +49,7 @@ const Category = () => {
 					Amra
 				</Link>
 				<Link
-					href="/portfolio?cat=style"
+					href="/mayabi"
 					className={`${styles.category} ${styles.instagram}`}
 				>
 					<Image
@@ -61,12 +61,9 @@ const Category = () => {
 					/>
 					Mayabi
 				</Link>
-				<Link
-					href="/portfolio?cat=style"
-					className={`${styles.category} ${styles.youtube}`}
-				>
+				<Link href="/mahim" className={`${styles.category} ${styles.youtube}`}>
 					<Image
-						src="/youtube.png"
+						src="/instagram.jpg"
 						alt=" "
 						width={32}
 						height={32}
@@ -74,73 +71,6 @@ const Category = () => {
 					/>
 					Mahim
 				</Link>
-				<Link
-					href="/sibling?cat=style"
-					className={`${styles.category} ${styles.facebook}`}
-				>
-					<Image
-						src="/facebook.png"
-						alt=" "
-						width={32}
-						height={32}
-						className={styles.image}
-					/>
-					Bhaibon
-				</Link>
-
-				<Link
-					href="/about?cat=style"
-					className={`${styles.category} ${styles.facebook}`}
-				>
-					<Image
-						src="/facebook.png"
-						alt=" "
-						width={32}
-						height={32}
-						className={styles.image}
-					/>
-					Sony
-				</Link>
-
-				<Link
-					href="/about?cat=style"
-					className={`${styles.category} ${styles.facebook}`}
-				>
-					<Image
-						src="/facebook.png"
-						alt=" "
-						width={32}
-						height={32}
-						className={styles.image}
-					/>
-					MumMum
-				</Link>
-				{/* <Link
-					href={`/blog`}
-					className={`${styles.category} ${styles.instagram}`}
-				>
-					<Image
-						src="/instagram.jpg"
-						alt=" "
-						width={32}
-						height={32}
-						className={styles.image}
-					/>
-					instagram
-				</Link>
-				<Link
-					href={`/blog`}
-					className={`${styles.category} ${styles.instagram}`}
-				>
-					<Image
-						src="/instagram.jpg"
-						alt=" "
-						width={32}
-						height={32}
-						className={styles.image}
-					/>
-					instagram
-				</Link> */}
 			</div>
 		</div>
 	);

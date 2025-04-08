@@ -1,4 +1,8 @@
 .container {
+	display: flex;
+	flex-direction: column;
+
+	gap: 30px;
 }
 
 .itemsHover {
@@ -22,17 +26,7 @@
 .portfolioItems {
 	border: 3px solid rgb(205, 184, 203);
 	border-radius: 5px;
-	height: 450px;
-	width: 450px;
-	position: relative;
-	background-size: cover !important;
-	/* translate-x: 20px;
-	margin-top: 40px; */
-}
-.portfolioItems {
-	border: 3px solid rgb(205, 184, 203);
-	border-radius: 5px;
-	height: 450px;
+	height: 550px;
 	width: 450px;
 	position: relative;
 	background-size: cover !important;
@@ -46,12 +40,12 @@
 	bottom: 10px;
 }
 .portfolioItems:hover .title {
-	color: rgb(125, 42, 100);
+	color: rgb(136, 42, 109);
 }
 
 .portfolioItems:nth-child(1) {
 	background: url('/mayabi1.jpg');
-	/* translate-x: 50px; */
+
 	margin-top: 50px;
 }
 
@@ -61,22 +55,22 @@
 
 .portfolioItems:nth-child(3) {
 	background: url('/mahim1.jpg');
-	/* translate-x: 50px; */
+
 	margin-top: 50px;
 }
 /* itemsHoverBottom */
 
 .itemsHoverBottom {
-	margin-bottom: 100px;
+	margin-bottom: 80px;
 }
 .bottomPortfolioItems {
 	border: 3px solid rgb(205, 184, 203);
 	border-radius: 5px;
-	height: 450px;
+	height: 550px;
 	width: 450px;
 	position: relative;
 	background-size: cover !important;
-	/* translate-x: 20px; */
+
 	margin-top: 100px;
 }
 
@@ -86,8 +80,8 @@
 }
 
 .bottomPortfolioItems:nth-child(1) {
-	background: url('/mayabiabbu3.jpg');
-	/* translate-x: 50px; */
+	background: url('/mayabiabbu7.JPG');
+
 	margin-top: 50px;
 }
 
@@ -97,18 +91,18 @@
 
 .bottomPortfolioItems:nth-child(3) {
 	background: url('/mahimabbu6.jpg');
-	/* translate-x: 50px; */
+
 	margin-top: 50px;
 }
 
 .endPortfolioItems {
 	border: 3px solid rgb(205, 184, 203);
 	border-radius: 5px;
-	height: 450px;
-	width: 450px;
+	height: 540px;
+	width: 490px;
 	position: relative;
 	background-size: cover !important;
-	/* translate-x: 20px; */
+
 	margin-top: 100px;
 }
 .endItems {
@@ -118,17 +112,120 @@
 
 .endPortfolioItems:nth-child(1) {
 	background: url('/abbumayabimahim.jpg');
+	margin-top: 50px;
 }
 .endPortfolioItems:nth-child(2) {
 	background: url('/mahimami3.jpg');
 }
 .endPortfolioItems:nth-child(3) {
 	background: url('/amimayabimahim3.jpg');
+	margin-top: 50px;
 }
-/* @media screen and (max-width: 1280px) {
-	.post {
-		width: 45%;
+@media screen and (max-width: 1280px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+
+		gap: 20px;
 	}
-} */
-/* @media screen and (max-width: 768px) {
-} */
+
+	.itemsHover {
+		margin-bottom: 20px;
+	}
+	.mainTitle {
+		font-size: 60px;
+		background: linear-gradient(to bottom, #ed7ed5, #e0d9df);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+	}
+
+	.portfolioItems {
+		border: 3px solid rgb(205, 184, 203);
+		border-radius: 5px;
+		height: 350px;
+		width: 350px;
+		position: relative;
+		background-size: cover !important;
+	}
+	.bottomPortfolioItems {
+		border: 3px solid rgb(205, 184, 203);
+		border-radius: 5px;
+		height: 350px;
+		width: 350px;
+		position: relative;
+		background-size: cover !important;
+
+		margin-top: 100px;
+	}
+
+	/* .endItems {
+		display: flex;
+		gap: 30px;
+	} */
+	.endPortfolioItems {
+		border: 3px solid rgb(205, 184, 203);
+		border-radius: 5px;
+
+		height: 350px;
+		width: 350px;
+		position: relative;
+
+		background-size: cover !important;
+
+		margin-top: 100px;
+	}
+}
+
+@media (max-width: 768px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+
+		gap: 10px;
+	}
+	.mainTitle {
+		font-size: 50px;
+		background: linear-gradient(to bottom, #ed7ed5, #e0d9df);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		align-items: center;
+		text-align: center;
+	}
+
+	.selectTitle {
+		margin: 10px 0px;
+	}
+	.items {
+		display: flex;
+		flex-direction: column;
+	}
+
+	.items {
+		width: 100%;
+	}
+	.bottomItems {
+		display: flex;
+		flex-direction: column;
+	}
+	.itemsHoverBottom {
+		margin-bottom: 20px;
+	}
+	.endItems {
+		display: flex;
+		flex-direction: column;
+	}
+}
+@media screen and (max-width: 640px) {
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+
+		gap: 10px;
+	}
+}

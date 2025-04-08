@@ -15,35 +15,37 @@ type Props = {
 const Family = ({ title, image, date, reviews }: Props) => {
 	return (
 		<div className={styles.container}>
-			<div className={styles.vanila}>
-				<Image
-					src={image}
-					alt={title}
-					width={250}
-					height={250}
-					className={styles.vanilaImg}
-				/>
-			</div>
-			<h1 className={styles.vanilaTitle}>{title}</h1>
-			<div className={styles.vanilaStar}>
-				<div className={styles.vanilaStarCount}>
-					<FaStar className={styles.starIcon} />
-					<FaStar className={styles.starIcon} />
-					<FaStar className={styles.starIcon} />
-					<FaStar className={styles.starIcon} />
-					<FaStar className={styles.starIcon} />
+			<div className={styles.top}>
+				<div className={styles.vanila}>
+					<Image
+						src={image}
+						alt={title}
+						width={350}
+						height={350}
+						className={styles.vanilaImg}
+					/>
 				</div>
-				<div className={styles.reviews}>({reviews})</div>
 			</div>
-			<p className={styles.pTag}>
-				We miss you We miss you We miss you .We miss you We miss you
-			</p>
-			<div className={styles.date}>
-				<h1 className={styles.vanilaDate}>{date}</h1>
-				<Button url="/" text="Home" />
-				{/* <button className={styles.biButton}>
-						<BiBell className={styles.ball} />
-					</button> */}
+
+			<div className={styles.bottom}>
+				<h1 className={styles.vanilaTitle}>{title}</h1>
+				<div className={styles.vanilaStar}>
+					<div className={styles.vanilaStarCount}>
+						<FaStar className={styles.starIcon} />
+						<FaStar className={styles.starIcon} />
+						<FaStar className={styles.starIcon} />
+						<FaStar className={styles.starIcon} />
+						<FaStar className={styles.starIcon} />
+					</div>
+					<div className={styles.reviews}>({reviews})</div>
+				</div>
+				<p className={styles.pTag}>
+					We miss you We miss you We miss you .We miss you We miss you
+				</p>
+				<div className={styles.date}>
+					<h1 className={styles.vanilaDate}>{date}</h1>
+					<Button url="/" text="Home" />
+				</div>
 			</div>
 		</div>
 	);

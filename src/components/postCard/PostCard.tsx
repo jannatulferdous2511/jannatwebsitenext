@@ -1,37 +1,40 @@
 import Image from 'next/image';
 import Link from 'next/link';
 import React from 'react';
+
 import styles from './postCard.module.css';
 
 type Props = {};
 
-const PostCard = (props: Props) => {
+const PostCard = ({ post }: any) => {
 	return (
 		<div className={styles.container}>
 			<div className={styles.top}>
-				<div className={styles.imgContainer}>
-					<Image
-						src="/cat3.jpg"
-						alt=""
-						fill
-						// height={300}
-						// width={300}
-						className={styles.img}
-					/>
-				</div>
-				<span className={styles.date}> 04.09.2024</span>
+				{post.img && (
+					<div className={styles.imgContainer}>
+						<Image
+							src={post.img}
+							alt=""
+							fill
+							// height={400}
+							// width={300}
+							className={styles.img}
+						/>
+					</div>
+				)}
+				<span className={styles.date}>
+					{post.createdAt?.toString().slice(4, 16)}
+				</span>
 			</div>
 			<div className={styles.bottom}>
-				<h1 className={styles.title}>Title</h1>
-				<p className={styles.desc}>
-					Its my pleasure to travel with my dog everywhere.Its my pleasure to
-					travel with my dog everywhere.Its my pleasure to travel with my dog
-					everywhere.Its my pleasure to travel with my dog everywhere.
-				</p>
+				<h1 className={styles.title}>{post.title}</h1>
+				<p className={styles.desc}>{post.desc}</p>
 
-				<span>we love uor pets</span>
-
-				<Link className={styles.link} href="/blog/post">
+				<Link
+					className={styles.link}
+					href={`/ourFamily/${post.slug}`}
+					key={post.id}
+				>
 					Read More
 				</Link>
 			</div>

@@ -32,46 +32,57 @@
 	cursor: pointer;
 	/* z-index: 20; */
 }
+.menuButton {
+	cursor: pointer;
+}
 
 .mobileLinks,
 .menuButton {
 	display: none;
 }
+@media (max-width: 1024px) {
+	.logout {
+		font-size: 11px;
+	}
+}
 
 @media (max-width: 768px) {
-	.container {
-	}
 	.links {
 		display: none;
 	}
 
 	.menuButton {
-		display: block;
+		display: flex;
 		cursor: pointer;
+
+		padding-left: 140px;
 	}
 
 	.mobileLinks {
 		position: absolute;
 		top: 100px;
 		right: 0;
-		width: 100%;
+
+		width: 50%;
 		height: calc(100vh - 100px);
 
-		background-color: #75476fee;
+		background-color: black;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
 		gap: 10px;
 		cursor: pointer;
-		z-index: 20;
+		z-index: 10;
 	}
 }
 @media screen and (max-width: 640px) {
 	.menuButton {
-		display: flex;
+		display: block;
 	}
-	.miniButton {
-		display: flex;
+}
+@media screen and (max-width: 640px) {
+	.menuButton {
+		display: block;
 	}
 }

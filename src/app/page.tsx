@@ -1,10 +1,16 @@
 'use client';
 import Button from '@/components/Button/Button';
+import Count from '@/components/CountDown/Count';
 import Motion from '@/components/MotionSony/Motion';
+import Testimonial from '@/components/Testimonial/TestimonialCard';
+import { Projects } from '@/components/Testimonial/data';
 import Image from 'next/image';
 import Category from './category/page';
 import styles from './page.module.css';
 
+import MayabiPhoto from '@/components/MayabiPhoto/MayabiPhoto';
+import NavIcons from '@/components/NavIcons/NavIcons';
+import SearchBar from '@/components/SearchBar/SearchBar';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 import React, { useEffect } from 'react';
 import Carousel from 'react-multi-carousel';
@@ -50,11 +56,15 @@ const home = (props: Props) => {
 						<div className={styles.textContainer}>
 							<h1 className={styles.postTitle}>We Miss You very much</h1>
 							<p className={styles.postDesc}>
-								We Miss You very much We are very sorry we were not there for
-								you . We Miss You very much We are very sorry we were not there
-								for you .
+								We are very sorry we were not there for you. You may be gone
+								from our sight, but you are never gone from our heart. Our mind
+								still talks to you. Our heart still looks for you. Our soul
+								knows you are at peace. But we still miss you.
 							</p>
-							<Button url="/portfolio" text="See Our Work" />
+
+							<div className={styles.button}>
+								<Button url="/portfolio" text="See Our Work" />
+							</div>
 						</div>
 
 						<div className={styles.imgContainer}>
@@ -75,11 +85,14 @@ const home = (props: Props) => {
 						<div className={styles.textContainer}>
 							<h1 className={styles.postTitle}>We Miss You very much</h1>
 							<p className={styles.postDesc}>
-								We Miss You very much We are very sorry we were not there for
-								you . We Miss You very much We are very sorry we were not there
-								for you .
+								We are very sorry we were not there for you. You may be gone
+								from our sight, but you are never gone from our heart. Our mind
+								still talks to you. Our heart still looks for you. Our soul
+								knows you are at peace. But we still miss you.
 							</p>
-							<Button url="/portfolio" text="See Our Work" />
+							<div className={styles.button}>
+								<Button url="/portfolio" text="See Our Work" />
+							</div>
 						</div>
 
 						<div className={styles.imgContainer}>
@@ -99,11 +112,41 @@ const home = (props: Props) => {
 						<div className={styles.textContainer}>
 							<h1 className={styles.postTitle}>We Miss You very much</h1>
 							<p className={styles.postDesc}>
-								We Miss You very much We are very sorry we were not there for
-								you . We Miss You very much We are very sorry we were not there
-								for you .
+								We are very sorry we were not there for you. You may be gone
+								from our sight, but you are never gone from our heart. Our mind
+								still talks to you. Our heart still looks for you. Our soul
+								knows you are at peace. But we still miss you.
 							</p>
-							<Button url="/portfolio" text="See Our Work" />
+							<div className={styles.button}>
+								<Button url="/portfolio" text="See Our Work" />
+							</div>
+						</div>
+
+						<div className={styles.imgContainer}>
+							<Image
+								src="/mayabisony.png"
+								alt="JANNATWEBSITE"
+								height={400}
+								width={400}
+								className={styles.sony}
+							/>
+						</div>
+					</div>
+				</div>
+				<div className={styles.container}>
+					<h1 className={styles.title}>We Miss You </h1>
+					<div className={styles.subContainer}>
+						<div className={styles.textContainer}>
+							<h1 className={styles.postTitle}>We Miss You very much</h1>
+							<p className={styles.postDesc}>
+								We are very sorry we were not there for you. You may be gone
+								from our sight, but you are never gone from our heart. Our mind
+								still talks to you. Our heart still looks for you. Our soul
+								knows you are at peace. But we still miss you.
+							</p>
+							<div className={styles.button}>
+								<Button url="/portfolio" text="See Our Work" />
+							</div>
 						</div>
 
 						<div className={styles.imgContainer}>
@@ -117,27 +160,93 @@ const home = (props: Props) => {
 						</div>
 					</div>
 				</div>
+				<div className={styles.container}>
+					<h1 className={styles.title}>We Miss You </h1>
+					<div className={styles.subContainer}>
+						<div className={styles.textContainer}>
+							<h1 className={styles.postTitle}>We Miss You very much</h1>
+							<p className={styles.postDesc}>
+								We are very sorry we were not there for you. You may be gone
+								from our sight, but you are never gone from our heart. Our mind
+								still talks to you. Our heart still looks for you. Our soul
+								knows you are at peace. But we still miss you.
+							</p>
+							<div className={styles.button}>
+								<Button url="/portfolio" text="See Our Work" />
+							</div>
+						</div>
+
+						<div className={styles.imgContainer}>
+							<Image
+								src="/sonyglass.JPG"
+								alt="JANNATWEBSITE"
+								height={400}
+								width={400}
+								className={styles.sony}
+							/>
+						</div>
+					</div>
+				</div>
+				<div className={styles.container}>
+					<h1 className={styles.title}>We Miss You </h1>
+					<div className={styles.subContainer}>
+						<div className={styles.textContainer}>
+							<h1 className={styles.postTitle}>We Miss You very much</h1>
+							<p className={styles.postDesc}>
+								We are very sorry we were not there for you. You may be gone
+								from our sight, but you are never gone from our heart. Our mind
+								still talks to you. Our heart still looks for you. Our soul
+								knows you are at peace. But we still miss you.
+							</p>
+							<div className={styles.button}>
+								<Button url="/portfolio" text="See Our Work" />
+							</div>
+						</div>
+
+						<div className={styles.imgContainer}>
+							<Image
+								src="/babasony.jpg"
+								alt="JANNATWEBSITE"
+								height={400}
+								width={400}
+								className={styles.sony}
+							/>
+						</div>
+					</div>
+				</div>
 			</Carousel>
 
-			<div className={styles.boxes}>
-				<div className={styles.box}>
-					<h1>10 k+</h1>
-					<p>Year of experience</p>
-				</div>
-				<div className={styles.box}>
-					<h1>10 k+</h1>
-					<p>Year of experience</p>
-				</div>
-				<div className={styles.box}>
-					<h1>10 k+</h1>
-					<p>Year of experience</p>
-				</div>
+			<Count />
+
+			<div className={styles.photoHeader}>
+				<h1 className={styles.photoTitle}>Lovely Pictures</h1>
+				<MayabiPhoto />
 			</div>
-			<div className={styles.brands}>
-				<Image src="/th.jpg" alt="" fill className={styles.brandImg} />
-			</div>
-			<div className={styles.brands}>
-				<Image src="/brand2.jpg" alt="" fill className={styles.brandImg} />
+
+			{/* <div className={styles.search}>
+				<SearchBar />
+				<NavIcons />
+			</div> */}
+
+			<div className={styles.testimonialContainer}>
+				<h1 className={styles.testimonialHeader}>Testimonial</h1>
+
+				<div
+					className={styles.testimonial}
+					// style={{ backgroundImage: 'url(/amra3.JPG)' }}
+				>
+					<div className={styles.testimonialMap}>
+						{Projects.map((project, index) => (
+							<Testimonial
+								key={index}
+								title={project.title}
+								desc={project.desc}
+								text={project.text}
+								image={project.url}
+							/>
+						))}
+					</div>
+				</div>
 			</div>
 
 			<Category />

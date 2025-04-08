@@ -1,0 +1,23 @@
+.form {
+	display: flex;
+	gap: 16px;
+	background-color: rgb(205, 184, 203);
+	padding: 8px;
+	border-radius: 7px;
+	flex: 1;
+	outline-style: none;
+}
+.input {
+	background-color: rgb(205, 184, 203);
+	/* background-color: transparent;  */
+	flex: 1;
+	outline-style: none;
+	height: 30px;
+}
+.button {
+	cursor: pointer;
+	background-color: transparent;
+	outline-style: none;
+}
+.img {
+}

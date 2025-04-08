@@ -1,0 +1,20 @@
+export const items = [
+	{ id: 1, img: '/sonymahim2.jpg' },
+	{ id: 2, img: '/sony10.jpg' },
+	{ id: 3, img: '/sonymayabi1.jpg' },
+	{ id: 4, img: '/sonymayabi.jpg' },
+
+	{ id: 5, img: '/sonybaba1.jpg' },
+	{ id: 6, img: '/sonyamra2.JPG' },
+	{ id: 7, img: '/sonyamra.JPG' },
+	{ id: 8, img: '/sonybaba2.jpg' },
+	{ id: 9, img: '/sony4.jpg' },
+	{ id: 10, img: '/sony3.jpg' },
+	{ id: 11, img: '/sonygrass.jpg' },
+	{ id: 12, img: '/sonymahim4.jpg' },
+	{ id: 13, img: '/sony15.jpg' },
+	{ id: 14, img: '/sony5.jpg' },
+	{ id: 15, img: '/sonychair.jpg' },
+	{ id: 16, img: '/sonymahim5.JPG' },
+	{ id: 16, img: '/mahimsonyspicker.JPG' },
+];

@@ -61,7 +61,7 @@
 }
 @media screen and (max-width: 1280px) {
 	.category {
-		width: 20%;
+		width: 22%;
 	}
 }
 
@@ -80,5 +80,16 @@
 @media screen and (max-width: 640px) {
 	.category {
 		width: 100%;
+	}
+	.categories {
+		padding-right: 10px;
+	}
+}
+@media screen and (max-width: 475px) {
+	.category {
+		width: 100%;
+	}
+	.categories {
+		padding-right: 20px;
 	}
 }

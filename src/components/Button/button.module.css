@@ -1,7 +1,7 @@
 .button {
 	width: max-content;
 	font-weight: 15px;
-	/* background-color: rgb(239, 191, 234); */
+
 	background-color: rgb(205, 184, 203);
 	color: black;
 	padding: 20px;
@@ -13,4 +13,27 @@
 	background-color: rgb(237, 187, 237);
 	transition: all;
 	transition-duration: 200;
+}
+@media screen and (max-width: 1024px) {
+	.button {
+		width: max-content;
+		align-items: center;
+		margin-left: 50px;
+
+		padding-left: 15px;
+		padding-right: 15px;
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+}
+
+@media screen and (max-width: 640px) {
+	.button {
+		width: max-content;
+
+		padding-left: 5px;
+		padding-right: 5px;
+		padding-top: 5px;
+		padding-bottom: 5px;
+	}
 }

@@ -1,5 +1,4 @@
 * {
-	box-sizing: border-box;
 	padding: 0;
 	margin: 0;
 }
@@ -42,6 +41,7 @@ a {
 .container {
 	width: 1536px;
 	min-height: 100vh;
+
 	margin: auto;
 	padding-left: 50px;
 	padding-right: 50px;
@@ -90,7 +90,7 @@ a {
 
 @media (max-width: 475px) {
 	.container {
-		width: 380px;
+		width: 100%;
 	}
 }
 .clip_path {
@@ -98,8 +98,7 @@ a {
 	height: 88vh;
 	width: 100%;
 	background: rgb(233, 233, 240);
-	/* background-color: rgb(196, 185, 196); */
-	/* padding: 150px 200px; */
+
 	display: flex;
 	flex-direction: column;
 	align-items: center;

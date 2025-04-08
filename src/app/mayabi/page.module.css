@@ -1,0 +1,97 @@
+.container {
+	display: flex;
+	flex-direction: column;
+
+	gap: 30px;
+}
+.header {
+	align-items: center;
+
+	text-align: center;
+	justify-content: center;
+}
+
+.picture {
+	display: flex;
+	flex-wrap: wrap;
+
+	gap: 50px;
+	align-items: center;
+	text-align: center;
+}
+
+.imgContainer {
+	display: flex;
+	position: relative;
+}
+
+.map {
+	display: flex;
+	flex-direction: column;
+
+	width: 30%;
+
+	gap: 10px;
+}
+.top {
+	display: flex;
+
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+.imgContainer {
+	width: 100%;
+	position: relative;
+	height: 400px;
+	gap: 15px;
+}
+.img {
+	object-fit: cover;
+}
+.bottom {
+	display: flex;
+	flex-direction: column;
+}
+.date {
+	font-size: 12px;
+}
+
+.desc {
+	width: 90%;
+	margin-top: 30px;
+	margin-bottom: 20px;
+	font-weight: 400;
+	font-size: 16px;
+	color: rgb(176, 136, 165);
+}
+
+.link {
+	text-decoration: underline;
+}
+/* 
+@media screen and (max-width: 1536px) {
+	.map {
+		width: 35%;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.map {
+		width: 45%;
+	}
+}
+@media screen and (max-width: 768px) {
+	.map {
+		width: 100%;
+	}
+}
+
+.title {
+	margin-top: 50px;
+	font-size: 50px;
+	text-align: center;
+
+	background: linear-gradient(to bottom, #ed7ed5, #e0d9df);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+} */

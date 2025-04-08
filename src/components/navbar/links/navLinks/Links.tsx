@@ -21,23 +21,23 @@ const links = [
 	},
 	{
 		id: 3,
-		title: 'Blog',
-		path: '/blog',
+		title: 'OurFamily',
+		path: '/ourFamily',
 	},
 	{
 		id: 4,
-		title: 'About',
-		path: '/about',
+		title: 'About Us',
+		path: '/aboutus',
 	},
 	{
 		id: 5,
-		title: 'Contact',
-		path: '/contact',
+		title: 'Mayabi',
+		path: '/mayabi',
 	},
 	{
 		id: 6,
-		title: 'Sibling',
-		path: '/sibling',
+		title: 'Mahim',
+		path: '/mahim',
 	},
 	{
 		id: '7',
@@ -47,12 +47,13 @@ const links = [
 ];
 
 const Links = (props: Props) => {
-	const [open, setOpen] = useState(false);
+	const [open, setOpen] = useState(true);
 
 	//TEMPORARY
 
 	const session = true;
-	const isAdmin = true;
+	// const isAdmin = true;
+	const isAdmin = false;
 
 	return (
 		<div className={styles.container}>
