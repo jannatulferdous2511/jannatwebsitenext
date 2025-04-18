@@ -77,12 +77,15 @@
 		display: flex;
 		flex-direction: column;
 
-		gap: 10px;
+		gap: 20px;
 		align-items: center;
 	}
 	/* .map {
 		width: 45%;
 	} */
+	.ubc {
+		object-fit: contain;
+	}
 	.imgContainer {
 		width: 100%;
 

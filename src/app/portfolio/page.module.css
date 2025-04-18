@@ -58,7 +58,6 @@
 
 	margin-top: 50px;
 }
-/* itemsHoverBottom */
 
 .itemsHoverBottom {
 	margin-bottom: 80px;
@@ -111,7 +110,7 @@
 }
 
 .endPortfolioItems:nth-child(1) {
-	background: url('/abbumayabimahim.jpg');
+	background: url('/mayabiblack.jpg');
 	margin-top: 50px;
 }
 .endPortfolioItems:nth-child(2) {
@@ -158,10 +157,6 @@
 		margin-top: 100px;
 	}
 
-	/* .endItems {
-		display: flex;
-		gap: 30px;
-	} */
 	.endPortfolioItems {
 		border: 3px solid rgb(205, 184, 203);
 		border-radius: 5px;

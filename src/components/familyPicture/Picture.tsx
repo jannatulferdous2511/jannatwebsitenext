@@ -1,6 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { notFound } from 'next/navigation';
+
 import React from 'react';
 import { items } from './data';
 import styles from './picture.module.css';

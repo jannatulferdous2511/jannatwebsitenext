@@ -27,7 +27,7 @@ export const items = [
 
 	{
 		id: 5,
-		img: '/mayabi42.jpg',
+		img: '/mayabilahanga.jpg',
 		desc: 'my beautiful picture',
 		date: '25.12.2024',
 	},
@@ -154,7 +154,7 @@ export const items = [
 	},
 	{
 		id: 26,
-		img: '/mayabidforthorth.jpg',
+		img: '/mayabidforthorth1.jpg',
 		desc: 'my beautiful picture',
 		date: '25.12.2024',
 	},
@@ -172,7 +172,7 @@ export const items = [
 	},
 	{
 		id: 29,
-		img: '/amimayabi12.jpg',
+		img: '/mayabi48.jpg',
 		desc: 'my beautiful picture',
 		date: '25.12.2024',
 	},
@@ -190,13 +190,19 @@ export const items = [
 	},
 	{
 		id: 32,
-		img: '/mayabi3.jpg',
+		img: '/mayabi49.jpg',
 		desc: 'my beautiful picture',
 		date: '25.12.2024',
 	},
 	{
 		id: 33,
-		img: '/mayabi48.jpg',
+		img: '/mayabi3.jpg',
+		desc: 'my beautiful picture',
+		date: '25.12.2024',
+	},
+	{
+		id: 34,
+		img: '/mayabihat.jpg',
 		desc: 'my beautiful picture',
 		date: '25.12.2024',
 	},

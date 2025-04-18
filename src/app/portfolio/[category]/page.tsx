@@ -17,6 +17,7 @@ type Props = {
 	desc: string;
 	image: string;
 };
+
 const getData = (cat) => {
 	const data = items[cat];
 

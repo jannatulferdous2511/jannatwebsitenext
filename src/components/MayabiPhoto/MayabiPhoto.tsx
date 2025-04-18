@@ -105,17 +105,3 @@ const MayabiPhoto = (props: Props) => {
 };
 
 export default MayabiPhoto;
-
-{
-	/* <div className={styles.imgMap}>
-	{images.map((img) =>
-		(<div className={styles.mayabiImages} key={img.id}>
-	<Image src={img.url} alt='' height={50} width={50}/>
-</div>))}
-	
-</div> */
-}
-// /babamahimstore.jpg
-// /mayabiabbu8.JPG
-// "/mayabiabbu9.JPG"
-// "/mayabiabbu4.JPG"

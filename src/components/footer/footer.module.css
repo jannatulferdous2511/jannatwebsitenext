@@ -47,47 +47,13 @@
 .listTitle {
 	font-weight: bold;
 }
-
-/* .container {
-	height: 100px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	color: rgb(205, 164, 191);
-}
-
-.logo {
-	
-	font-size: 25px;
-	font-weight: bold;
-
-	background: linear-gradient(to bottom, #ed7ed5, #e0d9df);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-}
-.links {
-	display: flex;
-	align-items: center;
-	gap: 20px;
-}
-.social {
-	gap: 2px;
-
-	cursor: pointer;
-	align-items: center;
-}
-.icon {
-	margin: 4px 4px;
-	padding: 2px 2px;
-}
-
-@media screen and (max-width: 768px) {
-	.container {
-		flex-direction: column;
-		align-items: center;
-		justify-content: space-around;
+@media screen and (max-width: 1280px) {
+	.logoDesc {
+		font-size: 12px;
+		font-weight: 400;
 	}
-} */
+}
+
 @media screen and (max-width: 768px) {
 	.container {
 		display: flex;

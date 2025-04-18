@@ -11,7 +11,7 @@
 .container {
 	display: flex;
 	flex-direction: column;
-	/* justify-content: space-between; */
+
 	gap: 100px;
 	width: 100%;
 }
@@ -56,7 +56,6 @@
 	font-weight: 400;
 	color: rgb(207, 178, 204);
 
-	/* padding-right: 85px; */
 	margin-left: 10px;
 	align-items: center;
 	text-align: center;
@@ -102,15 +101,6 @@
 	gap: 50px;
 }
 
-.brands {
-	width: 50px;
-	height: 50px;
-	position: relative;
-	gap: 5px;
-
-	/* filter: grayscale(1); */
-}
-
 .photoTitle {
 	font-size: 50px;
 	margin-bottom: 20px;
@@ -120,16 +110,6 @@
 	-webkit-text-fill-color: transparent;
 }
 
-.search {
-	width: 40%;
-	display: flex;
-
-	margin-top: 20px;
-
-	justify-content: space-between;
-
-	gap: 22px;
-}
 .testimonial {
 	display: flex;
 
@@ -155,13 +135,29 @@
 	background-size: cover;
 }
 
+.motionDesc {
+	margin-top: 20px;
+	font-size: 16px;
+	font-weight: 400;
+	text-align: center;
+	color: rgb(207, 178, 204);
+}
+.motionHeader {
+	font-size: 50px;
+	margin-bottom: 20px;
+	text-align: center;
+	background: linear-gradient(to bottom, #ed7ed5, #e0d9df);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+} 
+
 @media (max-width: 1366px) {
 	.mainContainer {
 		height: calc(100vh-100px);
 		display: flex;
 		flex-direction: column;
 		margin-bottom: 2px;
-		/* gap: 10px; */
+
 		overflow: hidden;
 	}
 	.container {
@@ -169,7 +165,6 @@
 		flex-direction: column;
 
 		gap: 30px;
-		/* width: 100%; */
 	}
 }
 
@@ -213,7 +208,7 @@
 
 	.postTitle {
 		font-size: 28px;
-		background: linear-gradient(to bottom, #ed7ed5, #e0d9df);
+		background: linear-gradient(to bottom, lab(67.82% 53.83 -25.9), #e0d9df);
 		-webkit-background-clip: text;
 		-webkit-text-fill-color: transparent;
 		align-items: center;
@@ -442,5 +437,23 @@
 	}
 	.testimonialHeader {
 		margin-bottom: 10px;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	.motionDesc {
+		margin-top: 20px;
+		font-size: 16px;
+		font-weight: 400;
+		text-align: center;
+		color: rgb(207, 178, 204);
+	}
+	.motionHeader {
+		font-size: 50px;
+		margin-bottom: 20px;
+		text-align: center;
+		background: linear-gradient(to bottom, #ed7ed5, #e0d9df);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
 	}
 }

@@ -16,13 +16,13 @@ const Family = ({ title, image, date, reviews }: Props) => {
 	return (
 		<div className={styles.container}>
 			<div className={styles.top}>
-				<div className={styles.vanila}>
+				<div className={styles.imgContainer}>
 					<Image
 						src={image}
 						alt={title}
-						width={350}
-						height={350}
-						className={styles.vanilaImg}
+						width={550}
+						height={410}
+						className={styles.familyImg}
 					/>
 				</div>
 			</div>
@@ -44,7 +44,9 @@ const Family = ({ title, image, date, reviews }: Props) => {
 				</p>
 				<div className={styles.date}>
 					<h1 className={styles.vanilaDate}>{date}</h1>
-					<Button url="/" text="Home" />
+					<div className={styles.buttonContainer}>
+						<Button url="/" text="Home" />
+					</div>
 				</div>
 			</div>
 		</div>

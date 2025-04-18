@@ -1,7 +1,7 @@
 'use client';
 import Button from '@/components/Button/Button';
 import Count from '@/components/CountDown/Count';
-import Motion from '@/components/MotionSony/Motion';
+
 import Testimonial from '@/components/Testimonial/TestimonialCard';
 import { Projects } from '@/components/Testimonial/data';
 import Image from 'next/image';
@@ -9,10 +9,10 @@ import Category from './category/page';
 import styles from './page.module.css';
 
 import MayabiPhoto from '@/components/MayabiPhoto/MayabiPhoto';
-import NavIcons from '@/components/NavIcons/NavIcons';
-import SearchBar from '@/components/SearchBar/SearchBar';
+
 import 'aos/dist/aos.css'; // You can also use <link> for styles
-import React, { useEffect } from 'react';
+
+import Motion from '@/components/Motion/Motion';
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 
@@ -214,6 +214,33 @@ const home = (props: Props) => {
 						</div>
 					</div>
 				</div>
+				<div className={styles.container}>
+					<h1 className={styles.title}>We Miss You </h1>
+					<div className={styles.subContainer}>
+						<div className={styles.textContainer}>
+							<h1 className={styles.postTitle}>We Miss You very much</h1>
+							<p className={styles.postDesc}>
+								We are very sorry we were not there for you. You may be gone
+								from our sight, but you are never gone from our heart. Our mind
+								still talks to you. Our heart still looks for you. Our soul
+								knows you are at peace. But we still miss you.
+							</p>
+							<div className={styles.button}>
+								<Button url="/portfolio" text="See Our Work" />
+							</div>
+						</div>
+
+						<div className={styles.imgContainer}>
+							<Image
+								src="/amisony5.JPG"
+								alt="JANNATWEBSITE"
+								height={400}
+								width={400}
+								className={styles.sony}
+							/>
+						</div>
+					</div>
+				</div>
 			</Carousel>
 
 			<Count />
@@ -223,18 +250,10 @@ const home = (props: Props) => {
 				<MayabiPhoto />
 			</div>
 
-			{/* <div className={styles.search}>
-				<SearchBar />
-				<NavIcons />
-			</div> */}
-
 			<div className={styles.testimonialContainer}>
 				<h1 className={styles.testimonialHeader}>Testimonial</h1>
 
-				<div
-					className={styles.testimonial}
-					// style={{ backgroundImage: 'url(/amra3.JPG)' }}
-				>
+				<div className={styles.testimonial}>
 					<div className={styles.testimonialMap}>
 						{Projects.map((project, index) => (
 							<Testimonial
@@ -250,6 +269,14 @@ const home = (props: Props) => {
 			</div>
 
 			<Category />
+			<div className={styles.motion}>
+				<h1 className={styles.motionHeader}>About me</h1>
+
+				<Motion />
+				<p className={styles.motionDesc}>
+					Every Day Is A Chance To Begin Again.
+				</p>
+			</div>
 		</div>
 	);
 };

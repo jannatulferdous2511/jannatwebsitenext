@@ -95,17 +95,11 @@ export const items = {
 			title: 'Creative Portfolio',
 			desc: 'Family is the best thing you could ever wish for. They are there for you during the ups and down and love you no matter what.',
 
-			image: '/amra30.jpg',
-		},
-		{
-			id: 6,
-			title: 'Creative Portfolio',
-			desc: '',
-
 			image: '/amrajamdani.jpg',
 		},
+
 		{
-			id: 7,
+			id: 6,
 			title: 'Creative Portfolio',
 			desc: 'Love your family. Spend time, be kind and serve one another. Make no room for regrets.Tomorrow is not promised and today is short.',
 

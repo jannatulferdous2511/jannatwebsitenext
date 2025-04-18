@@ -3,7 +3,7 @@ export const items = [
 		id: 1,
 		title: 'UBC',
 		desc: 'get together for birthday party',
-		image: '/mahimubc.JPG',
+		image: '/mahim48.jpg',
 
 		date: '5.6.2022',
 	},
@@ -138,7 +138,7 @@ export const items = [
 		id: 20,
 		title: 'Blue',
 		desc: 'get together for birthday party',
-		image: '/mahim48.jpg',
+		image: '/mahimwhitesuite.JPG',
 		date: '5.6.2022',
 	},
 	{
@@ -251,6 +251,20 @@ export const items = [
 		title: 'Blue',
 		desc: 'get together for birthday party',
 		image: '/mahim32.jpg',
+		date: '5.6.2022',
+	},
+	{
+		id: 37,
+		title: 'Blue',
+		desc: 'get together for birthday party',
+		image: '/mahim66.jpg',
+		date: '5.6.2022',
+	},
+	{
+		id: 38,
+		title: 'Blue',
+		desc: 'get together for birthday party',
+		image: '/mahim56.jpg',
 		date: '5.6.2022',
 	},
 ];

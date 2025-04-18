@@ -1,11 +1,11 @@
 export const items = [
-	{ id: 1, img: '/sonymahim2.jpg' },
-	{ id: 2, img: '/sony10.jpg' },
+	{ id: 1, img: '/sony10.jpg' },
+	{ id: 2, img: '/sonymahim2.jpg' },
 	{ id: 3, img: '/sonymayabi1.jpg' },
 	{ id: 4, img: '/sonymayabi.jpg' },
 
-	{ id: 5, img: '/sonybaba1.jpg' },
-	{ id: 6, img: '/sonyamra2.JPG' },
+	{ id: 5, img: '/mahimsonyspicker.JPG' },
+	{ id: 6, img: '/sonybaba1.jpg' },
 	{ id: 7, img: '/sonyamra.JPG' },
 	{ id: 8, img: '/sonybaba2.jpg' },
 	{ id: 9, img: '/sony4.jpg' },
@@ -15,6 +15,9 @@ export const items = [
 	{ id: 13, img: '/sony15.jpg' },
 	{ id: 14, img: '/sony5.jpg' },
 	{ id: 15, img: '/sonychair.jpg' },
-	{ id: 16, img: '/sonymahim5.JPG' },
-	{ id: 16, img: '/mahimsonyspicker.JPG' },
+	{ id: 16, img: '/sonymahim5.jpg' },
+	{ id: 17, img: '/sonymayabi2.JPG' },
+	{ id: 18, img: '/sonyamra2copy3.JPG' },
+	{ id: 19, img: '/sonybaba5.JPG' },
+	{ id: 20, img: '/sony17.JPG' },
 ];

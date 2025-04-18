@@ -28,6 +28,3 @@ function Button({ text, url }: Props) {
 }
 
 export default Button;
-{
-	/*  data-aos="zoom-in" data-aos-delay="400" */
-}

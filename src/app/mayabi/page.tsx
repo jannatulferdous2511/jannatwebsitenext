@@ -1,6 +1,5 @@
-import Button from '@/components/Button/Button';
 import Image from 'next/image';
-import Link from 'next/link';
+
 import React from 'react';
 import { items } from './data';
 import styles from './page.module.css';
@@ -10,6 +9,15 @@ const Mayabi = () => {
 		<div className={styles.container}>
 			<div className={styles.header}>
 				<h1 className={styles.title}>My Sweet Pictures</h1>
+			</div>
+			<div className={styles.headerPic}>
+				<Image
+					src={'/mayabicoinu.jpg'}
+					alt=""
+					height={450}
+					width={350}
+					className={styles.headerPicImg}
+				/>
 			</div>
 			<div className={styles.picture}>
 				{items.map((item) => (

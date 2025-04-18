@@ -80,7 +80,7 @@
 	}
 	.img {
 		position: relative;
-		/* height: 950px; */
+
 		height: 550px;
 	}
 }
@@ -98,33 +98,3 @@
 		height: 760px;
 	}
 }
-
-/* 
-@media (min-width: 440px) {
-	.imageLink {
-		width: 90%;
-	}
-}
-
-@media (min-width: 640px) {
-	.imageLink {
-		width: 45%;
-	}
-} */
-/* 
-@media (min-width: 1024px) {
-	.container {
-		gap: 30px;
-	}
-	.imageLink {
-		width: 22%;
-		display: flex;
-		flex-direction: column;
-		gap: 26px;
-		justify-content: space-between;
-	}
-	.img {
-		position: relative;
-		height: 550px;
-	}
-} */

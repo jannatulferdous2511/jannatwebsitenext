@@ -12,7 +12,7 @@ const data = [
 		title: 'Sugary',
 		description:
 			'When you slept only for a couple of hours ,but you need to get up for another happy day .',
-		img: '/sugarysleep1.jpg',
+		img: '/sugarysleep2.jpg',
 	},
 
 	{
@@ -27,7 +27,14 @@ const data = [
 		title: 'BlackyVanila',
 		description:
 			'When you slept only for a couple of hours ,but you need to get up for another happy day .',
-		img: '/blackyvanila.JPG',
+		img: '/blackyvanila1.JPG',
+	},
+	{
+		id: 4,
+		title: 'Catfamily1',
+		description:
+			'When you slept only for a couple of hours ,but you need to get up for another happy day .',
+		img: '/catfamily1.jpg',
 	},
 ];
 
@@ -45,23 +52,23 @@ const Slider = () => {
 
 	return (
 		<div className={styles.slider}>
-			<div className={styles.imageContainer}>
-				<Image
-					src={data[currentSlide].img}
-					alt=""
-					layout="fill"
-					className={styles.img}
-					objectFit="contain"
-				/>
-			</div>
-			<div className={styles.imgText}>
-				<h1 className={styles.imgTitle}>I am not sleeping</h1>
-				<h2 className={styles.imgDesc}>just dreaming for yummy yummy food</h2>
+			<div className={styles.wrapper}>
+				<div className={styles.imageContainer}>
+					<Image
+						src={data[currentSlide].img}
+						alt=""
+						fill
+						priority
+						className={styles.img}
+					/>
+				</div>
+				<div className={styles.imgText}>
+					<h1 className={styles.imgTitle}>I am not sleeping</h1>
+					<h2 className={styles.imgDesc}>just dreaming for yummy yummy food</h2>
+				</div>
 			</div>
 		</div>
 	);
 };
 
 export default Slider;
-
-// bg: 'background: rgb(233, 233, 240);',

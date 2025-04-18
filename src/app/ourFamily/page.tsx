@@ -1,8 +1,5 @@
-import type { Metadata } from 'next';
-
-import Picture from '@/components/familyPicture/Picture';
 import Image from 'next/image';
-import Link from 'next/link';
+
 import { items } from './data';
 import styles from './page.module.css';
 
@@ -26,15 +23,7 @@ const OurFamily = () => {
 									fill={true}
 								/>
 							</div>
-							{/* <span className={styles.date}>{item.date}</span> */}
 						</div>
-
-						{/* <div className={styles.bottom}>
-							<p className={styles.desc}>{item.desc}</p>
-							<Link className={styles.link} href="/ourFamily/PicPostPage">
-								{item.link}
-							</Link>
-						</div> */}
 					</div>
 				))}
 			</div>

@@ -33,7 +33,7 @@ const PetFamily = () => {
 						additionalTransfrom={0}
 						arrows={false}
 						autoPlay={true}
-						autoPlaySpeed={3000}
+						autoPlaySpeed={2500}
 						centerMode={false}
 						infinite
 						responsive={responsive}
