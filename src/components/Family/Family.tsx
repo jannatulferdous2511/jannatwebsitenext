@@ -39,9 +39,7 @@ const Family = ({ title, image, date, reviews }: Props) => {
 					</div>
 					<div className={styles.reviews}>({reviews})</div>
 				</div>
-				<p className={styles.pTag}>
-					We miss you We miss you We miss you .We miss you We miss you
-				</p>
+				<p className={styles.pTag}>We love you .We miss you .</p>
 				<div className={styles.date}>
 					<h1 className={styles.vanilaDate}>{date}</h1>
 					<div className={styles.buttonContainer}>

@@ -90,6 +90,12 @@ const PetFamily = () => {
 							reviews="6"
 							date="25.5.2024"
 						/>
+						<Family
+							title="Mummum"
+							image="/vanilafm.jpg"
+							reviews="6"
+							date="25.5.2024"
+						/>
 					</Carousel>
 				</div>
 			</div>
