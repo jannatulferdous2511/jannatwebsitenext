@@ -32,7 +32,7 @@ const Count = () => {
 						<div className={styles.key} key={index}>
 							<CountUp
 								end={item.num}
-								duration={5}
+								duration={10}
 								delay={2}
 								className={styles.stats}
 							/>
