@@ -10,6 +10,11 @@
 	text-align: center;
 	justify-content: center;
 }
+.subContainer {
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
 
 .picture {
 	display: flex;
@@ -80,11 +85,16 @@
 		gap: 20px;
 		align-items: center;
 	}
-	/* .map {
-		width: 45%;
-	} */
+
+	.subContainer {
+		align-items: center;
+		text-align: center;
+		justify-content: center;
+	}
 	.ubc {
 		object-fit: contain;
+		height: 400px;
+		width: 900px;
 	}
 	.imgContainer {
 		width: 100%;

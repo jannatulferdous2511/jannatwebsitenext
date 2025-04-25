@@ -1,5 +1,5 @@
 'use client';
-import AOS from 'aos';
+
 import 'aos/dist/aos.css';
 import Link from 'next/link';
 import React from 'react';
@@ -7,7 +7,7 @@ import styles from './page.module.css';
 
 type Props = {};
 
-const Portfolio = (props: Props) => {
+const Portfolio = () => {
 	return (
 		<div className={styles.container}>
 			<h1 className={styles.selectTitle}>Choose A Gallery</h1>

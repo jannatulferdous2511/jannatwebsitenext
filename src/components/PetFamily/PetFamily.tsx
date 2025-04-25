@@ -4,21 +4,22 @@ import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
 import Family from '../Family/Family';
 import styles from './petFamily.module.css';
+
 const responsive = {
 	desktop: {
 		breakpoint: { max: 3000, min: 1324 },
 		items: 4,
-		slidesToSlide: 1, // optional, default to 1.
+		slidesToSlide: 1,
 	},
 	tablet: {
 		breakpoint: { max: 1324, min: 764 },
 		items: 2,
-		slidesToSlide: 1, // optional, default to 1.
+		slidesToSlide: 1,
 	},
 	mobile: {
 		breakpoint: { max: 764, min: 0 },
 		items: 1,
-		slidesToSlide: 1, // optional, default to 1.
+		slidesToSlide: 1,
 	},
 };
 
@@ -33,69 +34,88 @@ const PetFamily = () => {
 						additionalTransfrom={0}
 						arrows={false}
 						autoPlay={true}
-						autoPlaySpeed={2500}
+						autoPlaySpeed={3000}
 						centerMode={false}
 						infinite
 						responsive={responsive}
 						itemClass="item"
 						showDots={true}
 					>
-						<Family
-							title="Vanila"
-							image="/vanila.jpg"
-							reviews="6"
-							date="30.9.2024"
-						/>
+						<div className={styles.family}>
+							<Family
+								title="Vanila"
+								image="/vanila.jpg"
+								reviews="6"
+								date="30.9.2024"
+							/>
+						</div>
+						<div className={styles.family}>
+							<Family
+								title="Sugary"
+								image="/sugary1.jpg"
+								reviews="6"
+								date="30.9.2024"
+							/>
+						</div>
+						<div className={styles.family}>
+							<Family
+								title="Blacky2"
+								image="/blacky2.jpg"
+								reviews="6"
+								date="25.5.2024"
+							/>
+						</div>
 
-						<Family
-							title="Sugary"
-							image="/sugary1.jpg"
-							reviews="6"
-							date="30.9.2024"
-						/>
-						<Family
-							title="Blacky2"
-							image="/blacky2.jpg"
-							reviews="6"
-							date="25.5.2024"
-						/>
-						<Family
-							title="Sony"
-							image="/sony7.jpg"
-							reviews="6"
-							date="25.5.2024"
-						/>
-						<Family
-							title="Sony"
-							image="/sonyamimahim.jpg"
-							reviews="6"
-							date="25.5.2024"
-						/>
-						<Family
-							title="Sony"
-							image="/sonymahim3.jpg"
-							reviews="6"
-							date="25.5.2024"
-						/>
+						<div className={styles.family}>
+							<Family
+								title="Sony"
+								image="/sony7.jpg"
+								reviews="6"
+								date="25.5.2024"
+							/>
+						</div>
+						<div className={styles.family}>
+							<Family
+								title="Sony"
+								image="/sonyamimahim.jpg"
+								reviews="6"
+								date="25.5.2024"
+							/>
+						</div>
 
-						<Family
-							title="Mummum"
-							image="/mummum36.JPG"
-							reviews="6"
-							date="25.5.2024"
-						/>
-						<Family
-							title="Mummum"
-							image="/mummumsofa1.JPG"
-							reviews="6"
-							date="25.5.2024"
-						/>
-						<Family
-							title="Mummum"
-							image="/vanilafm.jpg"
-							reviews="6"
-							date="25.5.2024"
-						/>
+						<div className={styles.family}>
+							<Family
+								title="Sony"
+								image="/sonymahim3.jpg"
+								reviews="6"
+								date="25.5.2024"
+							/>
+						</div>
+						<div className={styles.family}>
+							<Family
+								title="Mummum"
+								image="/mummum36.JPG"
+								reviews="6"
+								date="25.5.2024"
+							/>
+						</div>
+						<div className={styles.family}>
+							<Family
+								title="Mummum"
+								image="/mummumsofa1.JPG"
+								reviews="6"
+								date="25.5.2024"
+							/>
+						</div>
+
+						<div className={styles.family}>
+							<Family
+								title="Mummum"
+								image="/vanilafm.jpg"
+								reviews="6"
+								date="25.5.2024"
+							/>
+						</div>
 					</Carousel>
 				</div>
 			</div>

@@ -10,7 +10,7 @@ import styles from './page.module.css';
 
 import MayabiPhoto from '@/components/MayabiPhoto/MayabiPhoto';
 
-import 'aos/dist/aos.css'; // You can also use <link> for styles
+import 'aos/dist/aos.css';
 
 import Motion from '@/components/Motion/Motion';
 import Carousel from 'react-multi-carousel';

@@ -1,8 +1,10 @@
 .container {
 	display: flex;
-
+	height: 100%;
 	width: 100%;
 	justify-items: center;
+	align-items: center;
+	text-align: center;
 
 	overflow: hidden;
 }
@@ -18,15 +20,16 @@
 .familyContainer {
 	width: 100%;
 	margin-top: 60px;
-
-	align-items: center;
-	text-align: center;
-	justify-content: center;
 }
 .carousel {
 	width: 100%;
 
 	gap: 15px;
+	align-items: center;
+	text-align: center;
+	justify-content: center;
+}
+.family {
 	align-items: center;
 	text-align: center;
 	justify-content: center;

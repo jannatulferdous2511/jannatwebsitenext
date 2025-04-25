@@ -1,34 +1,31 @@
 'use client';
 
 import Button from '@/components/Button/Button';
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Image from 'next/image';
 import Link from 'next/link';
 import { notFound } from 'next/navigation';
-import React, { useEffect } from 'react';
-import { items } from './data';
+import { useEffect } from 'react';
+import { Category, Item, items } from './data';
 import styles from './page.module.css';
 
-type Props = {
-	id: number;
-	title: string;
-	desc: string;
-	image: string;
-};
+interface CategoryPageProps {
+	params: {
+		category: string;
+	};
+}
 
-const getData = (cat) => {
-	const data = items[cat];
-
-	if (data) {
-		return data;
+const getData = (cat: string): Item[] => {
+	if (cat in items) {
+		return items[cat as Category];
 	}
-	return notFound();
+	notFound();
 };
 
-const Category = ({ params }: { params: { category: string } }) => {
+const CategoryPage = ({ params }: CategoryPageProps) => {
 	const data = getData(params.category);
+
 	useEffect(() => {
 		AOS.init({
 			duration: 1000,
@@ -54,7 +51,7 @@ const Category = ({ params }: { params: { category: string } }) => {
 						>
 							{item.desc}
 						</p>
-						<Link href={'/ourFamily'} className={styles.button}>
+						<Link href="/ourFamily" className={styles.button}>
 							<Button
 								data-aos="zoom-in"
 								data-aos-delay="400"
@@ -68,7 +65,13 @@ const Category = ({ params }: { params: { category: string } }) => {
 						data-aos-delay="500"
 						className={styles.imgContainer}
 					>
-						<Image fill={true} alt="" src={item.image} />
+						<Image
+							fill
+							alt={item.title}
+							src={item.image}
+							sizes="(max-width: 768px) 100vw, 50vw"
+							className={styles.image}
+						/>
 					</div>
 				</div>
 			))}
@@ -76,4 +79,4 @@ const Category = ({ params }: { params: { category: string } }) => {
 	);
 };
 
-export default Category;
+export default CategoryPage;

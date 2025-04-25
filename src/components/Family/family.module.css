@@ -1,27 +1,31 @@
 .container {
-	background-color: rgb(122, 93, 112);
+	background-color: rgb(176, 128, 159);
 
 	align-items: center;
 	text-align: center;
 	justify-content: center;
-	gap: 20px;
+
 	border-radius: 14px;
-	padding: 10px 30px;
+	margin-left: 5px;
 }
+
 .imgContainer {
-	gap: 25px;
+	width: 100%;
 	margin-top: 20px;
+	justify-content: center;
 }
 .familyImg {
 	object-fit: contain;
+	margin-top: 25px;
+	justify-content: center;
+
 	width: 100%;
 }
 .bottom {
-	margin-top: 20px;
-	margin-bottom: 5px;
+	padding: 20px 30px;
 }
 .vanilaTitle {
-	margin-top: 20px;
+	margin-top: 10px;
 
 	color: rgb(20, 15, 15);
 	font-weight: 800;
@@ -72,7 +76,7 @@
 	color: rgb(82, 8, 8);
 	font-size: 18px;
 	font-weight: bold;
-	padding-bottom: 10px;
+	padding-bottom: 5px;
 }
 .buttonContainer {
 	gap: 20px;
@@ -80,12 +84,24 @@
 }
 @media screen and (max-width: 1280px) {
 	.container {
-		width: 85%;
-		height: 100%;
+		padding-top: 20px;
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+	}
+	.imgContainer {
+		width: 100%;
+
+		justify-content: center;
 	}
 	.familyImg {
 		object-fit: contain;
-		width: 350px;
-		height: 400px;
+		width: 100%;
+	}
+	.vanilaDate {
+		color: rgb(82, 8, 8);
+		font-size: 15px;
+		font-weight: bold;
+		padding-bottom: 5px;
 	}
 }

@@ -1,7 +1,7 @@
 import Button from '@/components/Button/Button';
 import Image from 'next/image';
 import React from 'react';
-import { BiBall, BiBasket, BiBell } from 'react-icons/bi';
+
 import { FaStar } from 'react-icons/fa';
 import styles from './family.module.css';
 
