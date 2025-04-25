@@ -13,7 +13,7 @@ const responsive = {
 	},
 	tablet: {
 		breakpoint: { max: 1324, min: 764 },
-		items: 2,
+		items: 3,
 		slidesToSlide: 1,
 	},
 	mobile: {
@@ -34,7 +34,7 @@ const PetFamily = () => {
 						additionalTransfrom={0}
 						arrows={false}
 						autoPlay={true}
-						autoPlaySpeed={3000}
+						autoPlaySpeed={2500}
 						centerMode={false}
 						infinite
 						responsive={responsive}
