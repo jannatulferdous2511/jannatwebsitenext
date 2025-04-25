@@ -42,7 +42,7 @@ const home = (props: Props) => {
 				additionalTransfrom={0}
 				arrows={false}
 				autoPlay={true}
-				autoPlaySpeed={2000}
+				autoPlaySpeed={2500}
 				centerMode={false}
 				infinite
 				responsive={responsive}
