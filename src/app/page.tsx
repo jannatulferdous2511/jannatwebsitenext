@@ -269,7 +269,7 @@ const home = (props: Props) => {
 			</div>
 
 			<Category />
-			<div className={styles.motion}>
+			<div className={styles.motionContainer}>
 				<h1 className={styles.motionHeader}>About me</h1>
 
 				<Motion />
